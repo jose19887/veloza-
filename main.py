@@ -1,4 +1,7 @@
 from fastapi import FastAPI
+
 app = FastAPI()
-@app.get('/')
-def root(): return {'message': 'Veloza Backend'}
+
+@app.get("/")
+def read_root():
+    return {"message": "Veloza backend is live!"}
